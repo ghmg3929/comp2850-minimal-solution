@@ -27,31 +27,37 @@
 
 ### [Evaluation Tasks (4-5 tasks)](#evaluation-tasks-4-5-tasks){.header}
 
-#### [Task 1 (T1): \[Task Name\]](#task-1-t1-task-name){.header}
+#### [Task 1 (T1): Add Tasks](#task-1-t1-task-name){.header}
 
--   **Scenario**: \[Brief context - what person needs to do\]
--   **Action**: \[Specific instruction - what to tell participant\]
--   **Success**: \[Observable outcome - how you know it worked\]
+-   **Scenario**: Add 3 tasks to the empty task list
+-   **Action**: Add tasks with titles "Buy Milk", "Buy Eggs" and "Go Home"
+-   **Success**: All 3 tasks appear in the task list, without error
 -   **Target time**: \[Your expert time × 2, e.g., 4s × 2 = 8-10s --- see [target times guidance](./combined-assessment-FINAL.html#setting-target-times-for-tasks)\]
 -   **Linked to**: \[Week 6 Job Story #X\]
 
-#### [Task 2 (T2): \[Task Name\]](#task-2-t2-task-name){.header}
+#### [Task 2 (T2): Edit Tasks](#task-2-t2-task-name){.header}
 
--   **Scenario**:
--   **Action**:
--   **Success**:
+-   **Scenario**: Edit a task in the task list
+-   **Action**: Edit "Buy Milk" to be "Buy Meat"
+-   **Success**: Task appears with new name in task list, no duplicate of original task, without error
 -   **Target time**: \[Your expert time × 2 --- see [target times guidance](./combined-assessment-FINAL.html#setting-target-times-for-tasks)\]
 -   **Linked to**:
 
-#### [Task 3 (T3): \[Task Name\]](#task-3-t3-task-name){.header}
+#### [Task 3 (T3): Filter Tasks](#task-3-t3-task-name){.header}
 
--   **Scenario**:
--   **Action**:
--   **Success**:
+-   **Scenario**: Filter tasks so only relevant ones are shown
+-   **Action**: Filter by the word "Buy"
+-   **Success**: Only "Buy Meat" and "Buy Eggs" is shown in the task list, without error
 -   **Target time**: \[Your expert time × 2 --- see [target times guidance](./combined-assessment-FINAL.html#setting-target-times-for-tasks)\]
 -   **Linked to**:
 
-\[Add Tasks 4-5 as needed\]
+#### [Task 4 (T4): Delete Tasks](#task-3-t3-task-name){.header}
+
+-   **Scenario**: Delete all 3 tasks from the task list
+-   **Action**: Delete all 3 tasks from the task list
+-   **Success**: The task list is empty, without error
+-   **Target time**: \[Your expert time × 2 --- see [target times guidance](./combined-assessment-FINAL.html#setting-target-times-for-tasks)\]
+-   **Linked to**:
 
 ------------------------------------------------------------------------
 
