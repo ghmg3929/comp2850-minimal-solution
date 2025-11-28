@@ -19,6 +19,30 @@
 
 **Week 6 Job Story #1**:
 
+**Situation**: When I'm adding a task to the task list
+**Motivation**: I want an immediate way to confirm that it was successful
+**Outcome**: So I can trust my action was successful
+**Underlying Need**: As this can cause confusion, anxiety or unnecessary double-checking
+
+**How Task 1 tests this**: I can monitor any uncertainty in completing the task, by waiting for them to tell me when they think they've done it.
+
+
+**Week 6 Job Story #2**:
+
+> \[Paste your Week 6 job story here - the one that informed your first task\]
+
+**How Task 1 tests this**: \[1 sentence explaining link\]
+
+
+**Week 6 Job Story #3**:
+
+> \[Paste your Week 6 job story here - the one that informed your first task\]
+
+**How Task 1 tests this**: \[1 sentence explaining link\]
+
+
+**Week 6 Job Story #4**:
+
 > \[Paste your Week 6 job story here - the one that informed your first task\]
 
 **How Task 1 tests this**: \[1 sentence explaining link\]
