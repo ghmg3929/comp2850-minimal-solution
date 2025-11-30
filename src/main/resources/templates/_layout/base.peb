@@ -53,6 +53,15 @@
     button[type="submit"],
     button {
       color: white !important; /* White text on blue background for better contrast */
+      transition: filter 200ms ease, background-color 200ms ease;
+      cursor: pointer;
+    }
+
+    /* Hover & focus effect for buttons */
+    button:hover,
+    button:focus-visible {
+      outline: 3px solid #1976d2;
+      outline-offset: 2px;
     }
   </style>
 </head>

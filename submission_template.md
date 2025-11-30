@@ -9,7 +9,7 @@
 -   I confirm all participants gave informed consent
 -   I confirm this work is my own (AI tools used for code assistance are cited below)
 
-**AI tools used** (if any): \[e.g., "Copilot for route handler boilerplate (lines 45-67 in diffs)"\]
+**AI tools used** (if any): ChatGPT used to better understand pico.css and other concepts needed for improvements
 
 ------------------------------------------------------------------------
 
@@ -122,11 +122,12 @@
 **Instructions**: Fill in this table with 3-5 findings from your pilots. Link each finding to data sources.
 
 ::: table-wrapper
-| Finding (1–5)            | Data Source                   | Observation (Quote/Timestamp)     | WCAG       | Impact (1–5) | Inclusion (1–5)  | Effort |
-|--------------------------|-------------------------------|-----------------------------------|------------|--------------|------------------|--------|
-| Unfilter not obvious (1) | P1 notes + metrics.csv L7–10  | “How do I remove the filter?”     | WCAG 3.3.2 | 3            | 3                | 2      |
-| Hard to edit (2)         | P1 notes                      | Observation 2                     | WCAG 1.3.2 | 2            | 1                | 3      |
-| Outline not visible (3)  | P2 notes                      | “The outline is a bit faint”      | WCAG 2.4.7 | 4            | 2                | 1      |
+| Finding (1–5)             | Data Source                   | Observation (Quote/Timestamp)     | WCAG       | Impact (1–5) | Inclusion (1–5)  | Effort |
+|---------------------------|-------------------------------|-----------------------------------|------------|--------------|------------------|--------|
+| Unfilter not obvious (1)  | P1 notes + metrics.csv L7–10  | “How do I remove the filter?”     | WCAG 3.3.2 | 3            | 3                | 2      |
+| Hard to edit (2)          | P1 notes                      | Observation 2                     | WCAG 1.3.2 | 2            | 1                | 3      |
+| Outline not visible (3)   | P2 notes                      | “The outline is a bit faint”      | WCAG 2.4.7 | 4            | 2                | 1      |
+| Edit without js (4)       | P3 notes                      | Observation 2                     | WCAG 4.1.2 | 3            | 3                | 5      |
 
 :::
 
@@ -134,9 +135,9 @@
 
 **Top 3 priorities for redesign**:
 
-1.  \[Finding #X - Priority score Y\]
-2.  \[Finding #X - Priority score Y\]
-3.  \[Finding #X - Priority score Y\]
+1.  Finding 3 - Priority 5
+2.  Finding 1 - Priority 4
+3.  Finding 2 - Priority 0
 
 **How to complete this table** (decision tree):
 
@@ -151,11 +152,7 @@
 
 **Instructions**: Paste your raw CSV data here OR attach metrics.csv file
 
-``` csv
-ts_iso,session_id,request_id,task_code,step,outcome,ms,http_status,js_mode
-2025-11-22T14:18:23.456Z,P1_a7f3,req_001,T1_add,success,,890,200,on
-[Your metrics data here - all rows from Logger.kt output]
-```
+[Metrics csv file](data/metrics.csv)
 
 **Participant summary**:
 
@@ -171,9 +168,9 @@ ts_iso,session_id,request_id,task_code,step,outcome,ms,http_status,js_mode
 
 **Instructions**: Show before/after code for 1-3 fixes. Link each to findings table.
 
-### [Fix 1: \[Fix Name\]](#fix-1-fix-name){.header}
+### [Fix 1: Clear Filter Button](#fix-1-fix-name){.header}
 
-**Addresses finding**: \[Finding #X from table above\]
+**Addresses finding**: Finding 1
 
 **Before** (\[file path:line number\]):
 
@@ -197,31 +194,23 @@ ts_iso,session_id,request_id,task_code,step,outcome,ms,http_status,js_mode
 
 ------------------------------------------------------------------------
 
-### [Fix 2: \[Fix Name\]](#fix-2-fix-name){.header}
+### [Fix 2: Increase Outline Visibility](#fix-2-fix-name){.header}
 
-**Addresses finding**: \[Finding #X\]
+**Addresses finding**: Finding 3
 
 **Before**:
 
-``` kotlin
-[Original code]
-```
+[Original code](evidence/screenshots/focus-outline-before.png)
 
 **After**:
 
-``` kotlin
-[Fixed code]
-```
+[Fixed code](evidence/screenshots/focus-outline-after.png)
 
-**What changed**:
+**What changed**: Added some css to add outlines around certain buttons.
 
-**Why**:
+**Why**: This fixes Focus Visible, which means keyboard only users and those with visual impairments can tell when a button is selected.
 
-**Impact**:
-
-------------------------------------------------------------------------
-
-\[Add Fix 3 if applicable\]
+**Impact**: By adding an outline when a button is selected, it is much clearer than just a slight darkening effect
 
 ------------------------------------------------------------------------
 
@@ -234,8 +223,8 @@ ts_iso,session_id,request_id,task_code,step,outcome,ms,http_status,js_mode
 ::: table-wrapper
 ### Keyboard (5)
 
-| Check | Criterion                             | Level | Result            | Notes                                                        |
-|-------|----------------------------------------|--------|--------------------|--------------------------------------------------------------|
+| Check | Criterion                             | Level  | Result            | Notes                                                       |
+|-------|---------------------------------------|--------|-------------------|-------------------------------------------------------------|
 | K1    | 2.1.1 All actions keyboard accessible | A      | [pass/fail]       | Tested Tab/Enter on all buttons                             |
 | K2    | 2.4.7 Focus visible                   | AA     | [pass/fail]       | 2px blue outline on all interactive elements                |
 | K3    | No keyboard traps                     | A      | [pass/fail]       | Can Tab through filter, edit, delete without traps          |
@@ -244,43 +233,43 @@ ts_iso,session_id,request_id,task_code,step,outcome,ms,http_status,js_mode
 
 ### Forms (3)
 
-| Check | Criterion            | Level | Result        | Notes                                               |
-|------|-----------------------|-------|----------------|-----------------------------------------------------|
-| F1   | 3.3.2 Labels present  | A     | [pass/fail]   | All inputs have label or aria-label                |
-| F2   | 3.3.1 Errors identified | A   | [pass/fail]   | Errors have role=alert (FIXED in Fix #1)           |
-| F3   | 4.1.2 Name/role/value | A     | [pass/fail]   | All form controls have accessible names            |
+| Check | Criterion              | Level | Result        | Notes                                              |
+|------|-------------------------|-------|---------------|----------------------------------------------------|
+| F1   | 3.3.2 Labels present    | A     | [pass/fail]   | All inputs have label or aria-label                |
+| F2   | 3.3.1 Errors identified | A     | [pass/fail]   | Errors have role=alert (FIXED in Fix #1)           |
+| F3   | 4.1.2 Name/role/value   | A     | [pass/fail]   | All form controls have accessible names            |
 
 ### Dynamic (3)
 
 | Check | Criterion               | Level | Result      | Notes                                              |
-|------|--------------------------|-------|-------------|----------------------------------------------------|
-| D1   | 4.1.3 Status messages    | AA    | [pass/fail] | Status div has role=status                         |
-| D2   | Live regions work        | AA    | [pass/fail] | Tested with NVDA, announces “Task added”          |
-| D3   | Focus management         | A     | [pass/fail] | Focus moves to error summary after submit          |
+|-------|--------------------------|-------|-------------|----------------------------------------------------|
+| D1    | 4.1.3 Status messages    | AA    | [pass/fail] | Status div has role=status                         |
+| D2    | Live regions work        | AA    | [pass/fail] | Tested with NVDA, announces “Task added”          |
+| D3    | Focus management         | A     | [pass/fail] | Focus moves to error summary after submit          |
 
 ### No-JS (3)
 
 | Check | Criterion              | Level | Result      | Notes                                              |
-|------|-------------------------|-------|-------------|----------------------------------------------------|
-| N1   | Full feature parity     | —     | [pass/fail] | All CRUD ops work without JS                      |
-| N2   | POST-Redirect-GET       | —     | [pass/fail] | No double-submit on refresh                       |
-| N3   | Errors visible          | A     | [pass/fail] | Error summary shown in no-JS mode                 |
+|-------|-------------------------|-------|-------------|----------------------------------------------------|
+| N1    | Full feature parity     | —     | [pass/fail] | All CRUD ops work without JS                      |
+| N2    | POST-Redirect-GET       | —     | [pass/fail] | No double-submit on refresh                       |
+| N3    | Errors visible          | A     | [pass/fail] | Error summary shown in no-JS mode                 |
 
 ### Visual (3)
 
 | Check | Criterion              | Level | Result      | Notes                           |
-|------|-------------------------|-------|-------------|---------------------------------|
-| V1   | 1.4.3 Contrast minimum  | AA    | [pass/fail] | All text 7.1:1 (AAA) via CCA    |
-| V2   | 1.4.4 Resize text       | AA    | [pass/fail] | 200% zoom, no content loss      |
-| V3   | 1.4.11 Non-text contrast | AA   | [pass/fail] | Focus indicator 4.5:1           |
+|-------|-------------------------|-------|-------------|---------------------------------|
+| V1    | 1.4.3 Contrast minimum  | AA    | [pass/fail] | All text 7.1:1 (AAA) via CCA    |
+| V2    | 1.4.4 Resize text       | AA    | [pass/fail] | 200% zoom, no content loss      |
+| V3    | 1.4.11 Non-text contrast | AA   | [pass/fail] | Focus indicator 4.5:1           |
 
 ### Semantic (3)
 
 | Check | Criterion               | Level | Result      | Notes                                           |
-|------|--------------------------|-------|-------------|-------------------------------------------------|
-| S1   | 1.3.1 Headings hierarchy | A     | [pass/fail] | h1 → h2 → h3, no skips                          |
-| S2   | 2.4.1 Bypass blocks      | A     | [pass/fail] | `role="main"` landmark for filter              |
-| S3   | 1.1.1 Alt text           | A     | [pass/fail] | No images OR all images have alt               |
+|-------|--------------------------|-------|-------------|-------------------------------------------------|
+| S1    | 1.3.1 Headings hierarchy | A     | [pass/fail] | h1 → h2 → h3, no skips                          |
+| S2    | 2.4.1 Bypass blocks      | A     | [pass/fail] | `role="main"` landmark for filter              |
+| S3    | 1.1.1 Alt text           | A     | [pass/fail] | No images OR all images have alt               |
 
 :::
 
@@ -344,6 +333,7 @@ ts_iso,session_id,request_id,task_code,step,outcome,ms,http_status,js_mode
         Strange to unfilter  
         Not enough outline contrast  
 **P3**: [Link to notes](evidence/pilot_notes/P3-notes.md)  
+        Problems with edit
 
 ------------------------------------------------------------------------
 

@@ -78,6 +78,7 @@
 
             <small id="search-hint">Filters tasks as you type; works without JavaScript.</small>
             <button type="submit">Apply Filter</button>
+            <button type="submit" onclick="document.getElementById('search-query').value = '';">Remove Filter</button>
         </form>
     </section>
 
