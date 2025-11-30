@@ -126,6 +126,7 @@
   ------------------------- --------------------------------------------- ----------------------------------- -------------------- -------------- ----------------- --------------
   Unfilter not obvious (1)  P1 notes + metrics.csv L7-10                  "How do I remove the filter?"       WCAG 3.3.2           3              3                 2
   Hard to edit (2)          P1 notes                                      Observation 2                       WCAG 1.3.2           2              1                 3
+  Outline not visible (3)   P2 notes                                      "The outline is a bit faint"        WCAG 2.4.7           4              2                 1
                                                                                                                                                                
 :::
 
@@ -160,7 +161,7 @@ ts_iso,session_id,request_id,task_code,step,outcome,ms,http_status,js_mode
 
 -   **P1**: Laptop with HTMX on
 -   **P2**: Laptop with HTMX on, Keyboard Only
--   **P3**: Laptop with HTMX on
+-   **P3**: Laptop with no JS
 
 **Total participants**: 3
 
