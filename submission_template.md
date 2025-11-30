@@ -19,9 +19,9 @@
 
 **Week 6 Job Story #1**:
 
-**Situation**: When I struggle to remember tasks
-**Motivation**: I want to quickly add the task the moment I come up with it
-**Outcome**: So I can rely on my task list to keep track of them
+**Situation**: When I struggle to remember tasks  
+**Motivation**: I want to quickly add the task the moment I come up with it  
+**Outcome**: So I can rely on my task list to keep track of them  
 **Underlying Need**: Meaning I can be certain I haven't forgotten anything I need to do (Cognitive Impairment)
 
 **How Task 1 tests this**: It ensures tasks can be added swiftly and clearly
@@ -29,9 +29,9 @@
 
 **Week 6 Job Story #2**:
 
-**Situation**: When my descriptions of tasks begin to be unclear to me
-**Motivation**: I want either me or someone else to be able to rephrase them
-**Outcome**: So I can always understand what it is I need to do
+**Situation**: When my descriptions of tasks begin to be unclear to me  
+**Motivation**: I want either me or someone else to be able to rephrase them  
+**Outcome**: So I can always understand what it is I need to do  
 **Underlying Need**: So I always can maintain clarity on what it is I need to do (Cognitive Impairment, possibly with helper)
 
 **How Task 2 tests this**: It ensures it is perfectly clear how to change the names of tasks
@@ -39,9 +39,9 @@
 
 **Week 6 Job Story #3**:
 
-**Situation**: When I'm scrolling through the task list
-**Motivation**: I want to be able to find the task I need quickly
-**Outcome**: So I reach the task with minimal effort
+**Situation**: When I'm scrolling through the task list  
+**Motivation**: I want to be able to find the task I need quickly  
+**Outcome**: So I reach the task with minimal effort  
 **Underlying Need**: So I can reduce the physical strain of using the task list effectively (Motor Impairment)
 
 **How Task 3 tests this**: It ensures it is easy to filter and unfilter the task list
@@ -49,10 +49,10 @@
 
 **Week 6 Job Story #4**:
 
-**Situation**: When the task list becomes cluttered
-**Motivation**: I want to be able to remove tasks I have completed
-**Outcome**: So I can focus on what I still need to do
-**Underlying Need**: To reduce any stress of trying to figure out what tasks are left (Anxiety)
+**Situation**: When the task list becomes cluttered  
+**Motivation**: I want to be able to remove tasks I have completed  
+**Outcome**: So I can focus on what I still need to do  
+**Underlying Need**: To reduce any stress of trying to figure out what tasks are left (Anxiety)  
 
 **How Task 4 tests this**: It ensures tasks can be removed swiftly and clearly
 
@@ -114,13 +114,9 @@
 **Instructions**: Fill in this table with 3-5 findings from your pilots. Link each finding to data sources.
 
 ::: table-wrapper
-  Finding                   Data Source                                   Observation (Quote/Timestamp)       WCAG                 Impact (1-5)   Inclusion (1-5)   Effort (1-5)   Priority
-  ------------------------- --------------------------------------------- ----------------------------------- -------------------- -------------- ----------------- -------------- -----------
-  SR errors not announced   metrics.csv L47-49 + P2 notes 14:23           P2: "I didn't hear any error"       3.3.1 Level A        5              5                 3              7
-  \[Your finding 2\]        \[Link to metrics.csv line OR pilot notes\]   \[Participant quote + timestamp\]   \[WCAG criterion\]   \[1-5\]        \[1-5\]           \[1-5\]        \[Score\]
-  \[Your finding 3\]                                                                                                                                                               
-  \[Your finding 4\]                                                                                                                                                               
-  \[Your finding 5\]                                                                                                                                                               
+  Finding (1-5)             Data Source                                   Observation (Quote/Timestamp)       WCAG                 Impact (1-5)   Inclusion (1-5)   Effort 
+  ------------------------- --------------------------------------------- ----------------------------------- -------------------- -------------- ----------------- --------------
+                                                                                                                                                               
 :::
 
 **Priority formula**: (Impact + Inclusion) - Effort
@@ -342,10 +338,7 @@ ts_iso,session_id,request_id,task_code,step,outcome,ms,http_status,js_mode
 
 **Instructions**: Attach pilot notes as separate files (P1-notes.md, P2-notes.md, etc.). Summarize key observations here.
 
-**P1** (\[ Variant - e.g., "Standard mouse + HTMX"\]):
-
--   **Key observation 1**: \[Quote + timestamp - e.g., "Struggled with filter button (09:47)"\]
--   **Key observation 2**: \[Quote + timestamp\]
+**P1**: [Link to notes](evidence/pilot notes/P1-notes.md)
 
 **P2** (\[Variant\]):
 
