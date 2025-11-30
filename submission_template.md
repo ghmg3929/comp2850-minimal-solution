@@ -65,7 +65,7 @@
 -   **Scenario**: Add 3 tasks to the empty task list
 -   **Action**: Add tasks with titles "Buy Milk", "Buy Eggs" and "Go Home"
 -   **Success**: All 3 tasks appear in the task list, without error
--   **Target time**: \[Your expert time × 2, e.g., 4s × 2 = 8-10s --- see [target times guidance](./combined-assessment-FINAL.html#setting-target-times-for-tasks)\]
+-   **Target time**: 18 seconds
 -   **Linked to**: Job Story #1
 
 #### [Task 2 (T2): Edit Tasks](#task-2-t2-task-name){.header}
@@ -73,7 +73,7 @@
 -   **Scenario**: Edit a task in the task list
 -   **Action**: Edit "Buy Milk" to be "Buy Meat"
 -   **Success**: Task appears with new name in task list, no duplicate of original task, without error
--   **Target time**: \[Your expert time × 2 --- see [target times guidance](./combined-assessment-FINAL.html#setting-target-times-for-tasks)\]
+-   **Target time**: 20 seconds (Account for scrolling)
 -   **Linked to**: Job Story #2
 
 #### [Task 3 (T3): Filter Tasks](#task-3-t3-task-name){.header}
@@ -81,7 +81,7 @@
 -   **Scenario**: Filter tasks so only relevant ones are shown
 -   **Action**: Filter by the word "Buy"
 -   **Success**: Only "Buy Meat" and "Buy Eggs" is shown in the task list, without error
--   **Target time**: \[Your expert time × 2 --- see [target times guidance](./combined-assessment-FINAL.html#setting-target-times-for-tasks)\]
+-   **Target time**: 6 seconds
 -   **Linked to**: Job Story #3
 
 #### [Task 4 (T4): Unfilter Tasks](#task-3-t3-task-name){.header}
@@ -89,7 +89,7 @@
 -   **Scenario**: Unfilter tasks to return to the full task list
 -   **Action**: Remove the "Buy Filter"
 -   **Success**: All tasks appear on the task list again
--   **Target time**: \[Your expert time × 2 --- see [target times guidance](./combined-assessment-FINAL.html#setting-target-times-for-tasks)\]
+-   **Target time**: 6 seconds
 -   **Linked to**: Job Story #3
 
 #### [Task 5 (T5): Delete Tasks](#task-3-t3-task-name){.header}
@@ -97,7 +97,7 @@
 -   **Scenario**: Delete all 3 tasks from the task list
 -   **Action**: Delete all 3 tasks from the task list
 -   **Success**: The task list is empty, without error
--   **Target time**: \[Your expert time × 2 --- see [target times guidance](./combined-assessment-FINAL.html#setting-target-times-for-tasks)\]
+-   **Target time**: 20 seconds
 -   **Linked to**: Job Story #4
 
 ------------------------------------------------------------------------
@@ -124,6 +124,8 @@
 ::: table-wrapper
   Finding (1-5)             Data Source                                   Observation (Quote/Timestamp)       WCAG                 Impact (1-5)   Inclusion (1-5)   Effort 
   ------------------------- --------------------------------------------- ----------------------------------- -------------------- -------------- ----------------- --------------
+  Unfilter not obvious (1)  P1 notes + metrics.csv L7-10                  "How do I remove the filter?"       WCAG 3.3.2           3              3                 2
+  Hard to edit (2)          P1 notes                                      Observation 2                       WCAG 1.3.2           2              1                 3
                                                                                                                                                                
 :::
 
@@ -156,12 +158,11 @@ ts_iso,session_id,request_id,task_code,step,outcome,ms,http_status,js_mode
 
 **Participant summary**:
 
--   **P1**: \[Variant - e.g., "Standard mouse + HTMX"\]
--   **P2**: \[Variant - e.g., "Keyboard-only, HTMX-on"\]
--   **P3** (if applicable): \[Variant\]
--   **P4** (if applicable): \[Variant\]
+-   **P1**: Laptop with HTMX on
+-   **P2**: Laptop with HTMX on, Keyboard Only
+-   **P3**: Laptop with HTMX on
 
-**Total participants**: \[n=2, 3, or 4\]
+**Total participants**: 3
 
 ------------------------------------------------------------------------
 
@@ -312,8 +313,8 @@ ts_iso,session_id,request_id,task_code,step,outcome,ms,http_status,js_mode
 
 **Re-pilot details**:
 
--   **P5** (post-fix): \[Variant - e.g., "Screen reader user, NVDA + keyboard"\] - \[Date piloted\]
--   **P6** (if applicable): \[Variant\] - \[Date\]
+-   **P4** (post-fix): \[Variant - e.g., "Screen reader user, NVDA + keyboard"\] - \[Date piloted\]
+-   **P5** (if applicable): \[Variant\] - \[Date\]
 
 **Limitations / Honest reporting**: \[If metrics didn't improve or only modestly: explain why. Small sample size? Wrong fix? Needs more iteration? Be honest - valued over perfect results.\]
 
@@ -347,13 +348,11 @@ ts_iso,session_id,request_id,task_code,step,outcome,ms,http_status,js_mode
 **Instructions**: Attach pilot notes as separate files (P1-notes.md, P2-notes.md, etc.). Summarize key observations here.
 
 **P1**: [Link to notes](evidence\pilot_notes\P1-notes.md)
-
-**P2** (\[Variant\]):
-
--   **Key observation 1**: \[Quote + timestamp\]
--   **Key observation 2**: \[Quote + timestamp\]
-
-\[Repeat for P3, P4 if applicable\]
+        Strange to unfilter
+        A lot of traversal
+**P2**: [Link to notes](evidence\pilot_notes\P2-notes.md)
+        Strange to unfilter
+**P3**: [Link to notes](evidence\pilot_notes\P3-notes.md)
 
 ------------------------------------------------------------------------
 
