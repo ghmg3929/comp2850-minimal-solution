@@ -338,7 +338,7 @@ ts_iso,session_id,request_id,task_code,step,outcome,ms,http_status,js_mode
 
 **Instructions**: Attach pilot notes as separate files (P1-notes.md, P2-notes.md, etc.). Summarize key observations here.
 
-**P1**: [Link to notes](evidence/pilot notes/P1-notes.md)
+**P1**: [Link to notes](evidence\pilot_notes\P1-notes.md)
 
 **P2** (\[Variant\]):
 
