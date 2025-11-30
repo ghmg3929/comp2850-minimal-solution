@@ -79,12 +79,20 @@
 #### [Task 3 (T3): Filter Tasks](#task-3-t3-task-name){.header}
 
 -   **Scenario**: Filter tasks so only relevant ones are shown
--   **Action**: Filter by the word "Buy" and then unfilter
+-   **Action**: Filter by the word "Buy"
 -   **Success**: Only "Buy Meat" and "Buy Eggs" is shown in the task list, without error
 -   **Target time**: \[Your expert time × 2 --- see [target times guidance](./combined-assessment-FINAL.html#setting-target-times-for-tasks)\]
 -   **Linked to**: Job Story #3
 
-#### [Task 4 (T4): Delete Tasks](#task-3-t3-task-name){.header}
+#### [Task 4 (T4): Unfilter Tasks](#task-3-t3-task-name){.header}
+
+-   **Scenario**: Unfilter tasks to return to the full task list
+-   **Action**: Remove the "Buy Filter"
+-   **Success**: All tasks appear on the task list again
+-   **Target time**: \[Your expert time × 2 --- see [target times guidance](./combined-assessment-FINAL.html#setting-target-times-for-tasks)\]
+-   **Linked to**: Job Story #3
+
+#### [Task 5 (T5): Delete Tasks](#task-3-t3-task-name){.header}
 
 -   **Scenario**: Delete all 3 tasks from the task list
 -   **Action**: Delete all 3 tasks from the task list
