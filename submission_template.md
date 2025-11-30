@@ -337,12 +337,13 @@ ts_iso,session_id,request_id,task_code,step,outcome,ms,http_status,js_mode
 
 **Instructions**: Attach pilot notes as separate files (P1-notes.md, P2-notes.md, etc.). Summarize key observations here.
 
-**P1**: [Link to notes](evidence\pilot_notes\P1-notes.md)
+**P1**: [Link to notes](evidence/pilot_notes/P1-notes.md)
         Strange to unfilter
         A lot of traversal
-**P2**: [Link to notes](evidence\pilot_notes\P2-notes.md)
+**P2**: [Link to notes](evidence/pilot_notes/P2-notes.md)
         Strange to unfilter
-**P3**: [Link to notes](evidence\pilot_notes\P3-notes.md)
+        Not enough outline contrast
+**P3**: [Link to notes](evidence/pilot_notes/P3-notes.md)
 
 ------------------------------------------------------------------------
 
