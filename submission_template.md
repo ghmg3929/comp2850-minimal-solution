@@ -122,12 +122,12 @@
 **Instructions**: Fill in this table with 3-5 findings from your pilots. Link each finding to data sources.
 
 ::: table-wrapper
-  Finding (1-5)             Data Source                                   Observation (Quote/Timestamp)       WCAG                 Impact (1-5)   Inclusion (1-5)   Effort 
-  ------------------------- --------------------------------------------- ----------------------------------- -------------------- -------------- ----------------- --------------
-  Unfilter not obvious (1)  P1 notes + metrics.csv L7-10                  "How do I remove the filter?"       WCAG 3.3.2           3              3                 2
-  Hard to edit (2)          P1 notes                                      Observation 2                       WCAG 1.3.2           2              1                 3
-  Outline not visible (3)   P2 notes                                      "The outline is a bit faint"        WCAG 2.4.7           4              2                 1
-                                                                                                                                                               
+| Finding (1–5)            | Data Source                   | Observation (Quote/Timestamp)     | WCAG       | Impact (1–5) | Inclusion (1–5)  | Effort |
+|--------------------------|-------------------------------|-----------------------------------|------------|--------------|------------------|--------|
+| Unfilter not obvious (1) | P1 notes + metrics.csv L7–10  | “How do I remove the filter?”     | WCAG 3.3.2 | 3            | 3                | 2      |
+| Hard to edit (2)         | P1 notes                      | Observation 2                     | WCAG 1.3.2 | 2            | 1                | 3      |
+| Outline not visible (3)  | P2 notes                      | “The outline is a bit faint”      | WCAG 2.4.7 | 4            | 2                | 1      |
+
 :::
 
 **Priority formula**: (Impact + Inclusion) - Effort
@@ -337,13 +337,13 @@ ts_iso,session_id,request_id,task_code,step,outcome,ms,http_status,js_mode
 
 **Instructions**: Attach pilot notes as separate files (P1-notes.md, P2-notes.md, etc.). Summarize key observations here.
 
-**P1**: [Link to notes](evidence/pilot_notes/P1-notes.md)
-        Strange to unfilter
-        A lot of traversal
-**P2**: [Link to notes](evidence/pilot_notes/P2-notes.md)
-        Strange to unfilter
-        Not enough outline contrast
-**P3**: [Link to notes](evidence/pilot_notes/P3-notes.md)
+**P1**: [Link to notes](evidence/pilot_notes/P1-notes.md)  
+        Strange to unfilter  
+        A lot of traversal  
+**P2**: [Link to notes](evidence/pilot_notes/P2-notes.md)  
+        Strange to unfilter  
+        Not enough outline contrast  
+**P3**: [Link to notes](evidence/pilot_notes/P3-notes.md)  
 
 ------------------------------------------------------------------------
 

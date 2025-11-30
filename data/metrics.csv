@@ -22,4 +22,3 @@ ts_iso,session_id,request_id,task_code,step,outcome,ms,http_status,js_mode
 2025-11-30T11:00:33.689844900Z,f63602,r_eec25c48,T4_delete,success,,19,200,on
 2025-11-30T11:00:38.108062500Z,f63602,r_4ffbd1dc,T4_delete,success,,27,200,on
 2025-11-30T11:00:41.910699500Z,f63602,r_e4605339,T4_delete,success,,8,200,on
-2025-11-30T12:43:25.767619900Z,f63602,r_1cf1748e,T0_list,success,,503,200,off
