@@ -1,4 +1,4 @@
-**Student**: \[Your name and student ID\] **Submission date**: \[DD/MM/YYYY\] **Academic Year**: 2025-26
+**Student**: Matthew Gregson (201818662) **Submission date**: \[DD/MM/YYYY\] **Academic Year**: 2025-26
 
 ------------------------------------------------------------------------
 
@@ -19,33 +19,42 @@
 
 **Week 6 Job Story #1**:
 
-**Situation**: When I'm adding a task to the task list
-**Motivation**: I want an immediate way to confirm that it was successful
-**Outcome**: So I can trust my action was successful
-**Underlying Need**: As this can cause confusion, anxiety or unnecessary double-checking
+**Situation**: When I struggle to remember tasks
+**Motivation**: I want to quickly add the task the moment I come up with it
+**Outcome**: So I can rely on my task list to keep track of them
+**Underlying Need**: Meaning I can be certain I haven't forgotten anything I need to do (Cognitive Impairment)
 
-**How Task 1 tests this**: I can monitor any uncertainty in completing the task, by waiting for them to tell me when they think they've done it.
+**How Task 1 tests this**: It ensures tasks can be added swiftly and clearly
 
 
 **Week 6 Job Story #2**:
 
-> \[Paste your Week 6 job story here - the one that informed your first task\]
+**Situation**: When my descriptions of tasks begin to be unclear to me
+**Motivation**: I want either me or someone else to be able to rephrase them
+**Outcome**: So I can always understand what it is I need to do
+**Underlying Need**: So I always can maintain clarity on what it is I need to do (Cognitive Impairment, possibly with helper)
 
-**How Task 1 tests this**: \[1 sentence explaining link\]
+**How Task 2 tests this**: It ensures it is perfectly clear how to change the names of tasks
 
 
 **Week 6 Job Story #3**:
 
-> \[Paste your Week 6 job story here - the one that informed your first task\]
+**Situation**: When I'm scrolling through the task list
+**Motivation**: I want to be able to find the task I need quickly
+**Outcome**: So I reach the task with minimal effort
+**Underlying Need**: So I can reduce the physical strain of using the task list effectively (Motor Impairment)
 
-**How Task 1 tests this**: \[1 sentence explaining link\]
+**How Task 3 tests this**: It ensures it is easy to filter and unfilter the task list
 
 
 **Week 6 Job Story #4**:
 
-> \[Paste your Week 6 job story here - the one that informed your first task\]
+**Situation**: When the task list becomes cluttered
+**Motivation**: I want to be able to remove tasks I have completed
+**Outcome**: So I can focus on what I still need to do
+**Underlying Need**: To reduce any stress of trying to figure out what tasks are left (Anxiety)
 
-**How Task 1 tests this**: \[1 sentence explaining link\]
+**How Task 4 tests this**: It ensures tasks can be removed swiftly and clearly
 
 ------------------------------------------------------------------------
 
@@ -57,7 +66,7 @@
 -   **Action**: Add tasks with titles "Buy Milk", "Buy Eggs" and "Go Home"
 -   **Success**: All 3 tasks appear in the task list, without error
 -   **Target time**: \[Your expert time × 2, e.g., 4s × 2 = 8-10s --- see [target times guidance](./combined-assessment-FINAL.html#setting-target-times-for-tasks)\]
--   **Linked to**: \[Week 6 Job Story #X\]
+-   **Linked to**: Job Story #1
 
 #### [Task 2 (T2): Edit Tasks](#task-2-t2-task-name){.header}
 
@@ -65,15 +74,15 @@
 -   **Action**: Edit "Buy Milk" to be "Buy Meat"
 -   **Success**: Task appears with new name in task list, no duplicate of original task, without error
 -   **Target time**: \[Your expert time × 2 --- see [target times guidance](./combined-assessment-FINAL.html#setting-target-times-for-tasks)\]
--   **Linked to**:
+-   **Linked to**: Job Story #2
 
 #### [Task 3 (T3): Filter Tasks](#task-3-t3-task-name){.header}
 
 -   **Scenario**: Filter tasks so only relevant ones are shown
--   **Action**: Filter by the word "Buy"
+-   **Action**: Filter by the word "Buy" and then unfilter
 -   **Success**: Only "Buy Meat" and "Buy Eggs" is shown in the task list, without error
 -   **Target time**: \[Your expert time × 2 --- see [target times guidance](./combined-assessment-FINAL.html#setting-target-times-for-tasks)\]
--   **Linked to**:
+-   **Linked to**: Job Story #3
 
 #### [Task 4 (T4): Delete Tasks](#task-3-t3-task-name){.header}
 
@@ -81,7 +90,7 @@
 -   **Action**: Delete all 3 tasks from the task list
 -   **Success**: The task list is empty, without error
 -   **Target time**: \[Your expert time × 2 --- see [target times guidance](./combined-assessment-FINAL.html#setting-target-times-for-tasks)\]
--   **Linked to**:
+-   **Linked to**: Job Story #4
 
 ------------------------------------------------------------------------
 
