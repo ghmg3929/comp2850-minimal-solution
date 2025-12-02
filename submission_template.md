@@ -2,7 +2,7 @@
 
 ------------------------------------------------------------------------
 
-## [Privacy & Ethics Statement](#privacy--ethics-statement){.header} {#privacy--ethics-statement}
+## [Privacy & Ethics Statement](#privacy--ethics-statement){#privacy--ethics-statement}
 
 -   I confirm all participant data is anonymous (session IDs use P1_xxxx format, not real names)
 -   I confirm all screenshots are cropped/blurred to remove PII (no names, emails, student IDs visible)
@@ -13,9 +13,9 @@
 
 ------------------------------------------------------------------------
 
-## [1. Protocol & Tasks](#1-protocol--tasks){.header} {#1-protocol--tasks}
+## [1. Protocol & Tasks](#1-protocol--tasks){#1-protocol--tasks}
 
-### [Link to Needs-Finding (LO2)](#link-to-needs-finding-lo2){.header}
+### [Link to Needs-Finding (LO2)](#link-to-needs-finding-lo2)
 
 **Week 6 Job Story #1**:
 
@@ -87,7 +87,7 @@
 #### [Task 4 (T4): Unfilter Tasks](#task-3-t3-task-name){.header}
 
 -   **Scenario**: Unfilter tasks to return to the full task list
--   **Action**: Remove the "Buy Filter"
+-   **Action**: Remove the "Buy" Filter
 -   **Success**: All tasks appear on the task list again
 -   **Target time**: 6 seconds
 -   **Linked to**: Job Story #3
@@ -301,12 +301,13 @@
 ### [Screenshots](#screenshots){.header}
 
 ::: table-wrapper
-  Filename                    What it shows                           Context/Link to finding
-  --------------------------- --------------------------------------- --------------------------------------
-  before-sr-error.png         Error message without role="alert"      Finding #1 - SR errors not announced
-  after-sr-error.png          Error message WITH role="alert" added   Fix #1 verification
-  regression-axe-report.png   axe DevTools showing 0 violations       Verification Part A
-  \[your-screenshot-3.png\]   \[Description\]                         \[Which finding/fix this supports\]
+|Filename                   |What it shows                            |Context/Link to finding               |
+|---------------------------|-----------------------------------------|--------------------------------------|
+|regression-axe-report.png  |axe DevTools showing 0 violations        |Verification Part A                   |
+|filter-buttons-before.png  |code showing the apply filter button     |Fix 1                                 |
+|filter-buttons-after.png   |the added remove filter button code      |Fix 1                                 |
+|focus-outline-before.png   |code showing the original css for buttons|Fix 2                                 |
+|focus-outline-after.png    |the added outline css code for buttons   |Fix 2                                 |
 :::
 
 **PII check**:
