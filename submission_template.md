@@ -58,9 +58,9 @@
 
 ------------------------------------------------------------------------
 
-### [Evaluation Tasks (4-5 tasks)](#evaluation-tasks-4-5-tasks){.header}
+### [Evaluation Tasks (4-5 tasks)](#evaluation-tasks-4-5-tasks)
 
-#### [Task 1 (T1): Add Tasks](#task-1-t1-task-name){.header}
+#### [Task 1 (T1): Add Tasks](#task-1-t1-task-name)
 
 -   **Scenario**: Add 3 tasks to the empty task list
 -   **Action**: Add tasks with titles "Buy Milk", "Buy Eggs" and "Go Home"
@@ -68,7 +68,7 @@
 -   **Target time**: 18 seconds
 -   **Linked to**: Job Story #1
 
-#### [Task 2 (T2): Edit Tasks](#task-2-t2-task-name){.header}
+#### [Task 2 (T2): Edit Tasks](#task-2-t2-task-name)
 
 -   **Scenario**: Edit a task in the task list
 -   **Action**: Edit "Buy Milk" to be "Buy Meat"
@@ -76,7 +76,7 @@
 -   **Target time**: 20 seconds (Account for scrolling)
 -   **Linked to**: Job Story #2
 
-#### [Task 3 (T3): Filter Tasks](#task-3-t3-task-name){.header}
+#### [Task 3 (T3): Filter Tasks](#task-3-t3-task-name)
 
 -   **Scenario**: Filter tasks so only relevant ones are shown
 -   **Action**: Filter by the word "Buy"
@@ -84,7 +84,7 @@
 -   **Target time**: 6 seconds
 -   **Linked to**: Job Story #3
 
-#### [Task 4 (T4): Unfilter Tasks](#task-3-t3-task-name){.header}
+#### [Task 4 (T4): Unfilter Tasks](#task-3-t3-task-name)
 
 -   **Scenario**: Unfilter tasks to return to the full task list
 -   **Action**: Remove the "Buy" Filter
@@ -92,7 +92,7 @@
 -   **Target time**: 6 seconds
 -   **Linked to**: Job Story #3
 
-#### [Task 5 (T5): Delete Tasks](#task-3-t3-task-name){.header}
+#### [Task 5 (T5): Delete Tasks](#task-3-t3-task-name)
 
 -   **Scenario**: Delete all 3 tasks from the task list
 -   **Action**: Delete all 3 tasks from the task list
@@ -102,7 +102,7 @@
 
 ------------------------------------------------------------------------
 
-### [Consent Script (They Read Verbatim)](#consent-script-they-read-verbatim){.header}
+### [Consent Script (They Read Verbatim)](#consent-script-they-read-verbatim)
 
 **Introduction**: "Thank you for participating in my HCI evaluation. This will take about 15 minutes. I'm testing my task management interface, not you. There are no right or wrong answers."
 
@@ -117,19 +117,16 @@
 
 ------------------------------------------------------------------------
 
-## [2. Findings Table](#2-findings-table){.header} {#2-findings-table}
+## [2. Findings Table](#2-findings-table){#2-findings-table}
 
 **Instructions**: Fill in this table with 3-5 findings from your pilots. Link each finding to data sources.
 
-::: table-wrapper
 | Finding (1–5)             | Data Source                   | Observation (Quote/Timestamp)     | WCAG       | Impact (1–5) | Inclusion (1–5)  | Effort |
 |---------------------------|-------------------------------|-----------------------------------|------------|--------------|------------------|--------|
 | Unfilter not obvious (1)  | P1 notes + metrics.csv L7–10  | “How do I remove the filter?”     | WCAG 3.3.2 | 3            | 3                | 2      |
 | Hard to edit (2)          | P1 notes                      | Observation 2                     | WCAG 1.3.2 | 2            | 1                | 3      |
 | Outline not visible (3)   | P2 notes                      | “The outline is a bit faint”      | WCAG 2.4.7 | 4            | 2                | 1      |
 | Edit without js (4)       | P3 notes                      | Observation 2                     | WCAG 4.1.2 | 3            | 3                | 5      |
-
-:::
 
 **Priority formula**: (Impact + Inclusion) - Effort
 
@@ -148,7 +145,7 @@
 
 ------------------------------------------------------------------------
 
-## [3. Pilot Metrics (metrics.csv)](#3-pilot-metrics-metricscsv){.header} {#3-pilot-metrics-metricscsv}
+## [3. Pilot Metrics (metrics.csv)](#3-pilot-metrics-metricscsv) {#3-pilot-metrics-metricscsv}
 
 **Instructions**: Paste your raw CSV data here OR attach metrics.csv file
 
@@ -164,11 +161,11 @@
 
 ------------------------------------------------------------------------
 
-## [4. Implementation Diffs](#4-implementation-diffs){.header} {#4-implementation-diffs}
+## [4. Implementation Diffs](#4-implementation-diffs){#4-implementation-diffs}
 
 **Instructions**: Show before/after code for 1-3 fixes. Link each to findings table.
 
-### [Fix 1: Clear Filter Button](#fix-1-fix-name){.header}
+### [Fix 1: Clear Filter Button](#fix-1-fix-name)
 
 **Addresses finding**: Finding 1
 **Path and File**: index.peb Line 80
@@ -189,7 +186,7 @@
 
 ------------------------------------------------------------------------
 
-### [Fix 2: Increase Outline Visibility](#fix-2-fix-name){.header}
+### [Fix 2: Increase Outline Visibility](#fix-2-fix-name)
 
 **Addresses finding**: Finding 3
 **Path and Line**: base.peb Line 54
@@ -210,14 +207,13 @@
 
 ------------------------------------------------------------------------
 
-## [5. Verification Results](#5-verification-results){.header} {#5-verification-results}
+## [5. Verification Results](#5-verification-results) {#5-verification-results}
 
-### [Part A: Regression Checklist (20 checks)](#part-a-regression-checklist-20-checks){.header}
+### [Part A: Regression Checklist (20 checks)](#part-a-regression-checklist-20-checks)
 
 **Instructions**: Test all 20 criteria. Mark pass/fail/n/a + add notes.
 **Axe Report**: [Report Here](evidence/screenshots/Regression-Axe-Report.png)
 
-::: table-wrapper
 ### Keyboard (5)
 
 | Check | Criterion                             | Level  | Result            | Notes                                                       |
@@ -268,37 +264,33 @@
 | S2    | 2.4.1 Bypass blocks      | A     | pass        | `role="main"` landmark for filter              |
 | S3    | 1.1.1 Alt text           | A     | pass        | No images                                      |
 
-:::
-
 **Summary**: 18/20 pass, 2/20 fail **Critical failures** (if any): Full Feature Parity
 
 ------------------------------------------------------------------------
 
-### [Part B: Before/After Comparison](#part-b-beforeafter-comparison){.header}
+### [Part B: Before/After Comparison](#part-b-beforeafter-comparison)
 
 **Instructions**: Compare Week 9 baseline (pre-fix) to Week 10 (post-fix). Show improvement.
 
-::: table-wrapper
   |Metric                   |Before (Week 9, n=X)  |After (Week 10, n=Y)  |Change            |Target Met?  |
   |-------------------------|----------------------|----------------------|------------------|-------------|
-  |Unfilter                 | 4700ms, n=3          | 3700ms, n=2          |-1000ms           |Yes          |
-  |Focus Outline            | 21s, n=1             | 19.5s, n=1           |-1500ms           |Yes          |
-:::
+  |Unfilter                 | 4.7s, n=3            | 3.2s, n=2            |-1500ms           |Yes          |
+  |Focus Outline            | 21s, n=1             | 14s, n=1             |-7s               |Yes          |
 
 **Re-pilot details**:
 
 -   **P4** (post-fix): Computer with HTMX on - 2/12/2025
 -   **P5** (post-fix): Computer with HTMX on, Keyboard Only - 2/12/2025
 
-**Limitations / Honest reporting**: There was a modest improvement in time due to the two fixes I implemented. These were only intended to be improvements to clarity, as I am not proficient enough to begin making more substantial changes like no-js task editing.
+**Limitations / Honest reporting**: There was a modest improvement in time due to the two fixes I implemented. These were only intended to be improvements to clarity, as I am not proficient enough to begin making more substantial changes like no-js task editing. I also think some of the improved times may look more impressive than they were, due to the small sample size, as I think my re-pilot participants were better with computers.
 
 ------------------------------------------------------------------------
 
-## [6. Evidence Folder Contents](#6-evidence-folder-contents){.header} {#6-evidence-folder-contents}
+## [6. Evidence Folder Contents](#6-evidence-folder-contents) {#6-evidence-folder-contents}
 
 **Instructions**: List all files in your evidence/ folder. Provide context.
 
-### [Screenshots](#screenshots){.header}
+### [Screenshots](#screenshots)
 
 ::: table-wrapper
 |Filename                   |What it shows                            |Context/Link to finding               |
@@ -318,7 +310,7 @@
 
 ------------------------------------------------------------------------
 
-### [Pilot Notes](#pilot-notes){.header}
+### [Pilot Notes](#pilot-notes)
 
 **Instructions**: Attach pilot notes as separate files (P1-notes.md, P2-notes.md, etc.). Summarize key observations here.
 
@@ -333,23 +325,22 @@
 
 ------------------------------------------------------------------------
 
-## [Evidence Chain Example (Full Trace)](#evidence-chain-example-full-trace){.header}
+## [Evidence Chain Example (Full Trace)](#evidence-chain-example-full-trace)
 
 **Instructions**: Pick ONE finding and show complete evidence trail from data → fix → verification.
 
-**Finding selected**: \[e.g., "Finding #1 - SR errors not announced"\]
+**Finding selected**: Finding #1 - Unfilter Problems
 
 **Evidence trail**:
 
-1.  **Data**: metrics.csv lines 47-49 show P2 (SR user) triggered validation_error 3 times
-2.  **Observation**: P2 pilot notes timestamp 14:23 - Quote: "I don't know if it worked, didn't hear anything"
-3.  **Screenshot**: before-sr-error.png shows error message has no role="alert" or aria-live
-4.  **WCAG**: 3.3.1 Error Identification (Level A) violation - errors not programmatically announced
-5.  **Prioritisation**: findings-table.csv row 1 - Priority score 7 (Impact 5 + Inclusion 5 - Effort 3)
-6.  **Fix**: implementation-diffs.md Fix #1 - Added role="alert" + aria-live="assertive" to error span
-7.  **Verification**: verification.csv Part A row F2 - 3.3.1 now PASS (tested with NVDA)
-8.  **Before/after**: verification.csv Part B - SR error detection improved from 0% to 100%
-9.  **Re-pilot**: P5 (SR user) pilot notes - "Heard error announcement immediately, corrected and succeeded"
+1.  **Data**: metrics.csv lines 7-10 show P1 triggered filter 4 times instead of 2
+2.  **Observation**: P1 pilot notes - "How do I remove the filter?"
+3.  **Screenshot**: filter-buttons-before.png shows the single add filter button
+4.  **WCAG**: 3.3.2 Labels and Instructions - labels or instructions are provided when content requires user input
+5.  **Prioritisation**: findings-table.csv row 1 - Priority score 4 (Impact 3 + Inclusion 3 - Effort 2)
+6.  **Fix**: implementation-diffs.md Fix #1 - Added "Remove Filter" button
+7.  **Verification**: verification.csv Part A row F1 - 3.3.2 will now pass
+8.  **Before/after**: verification.csv Part B - Unfilter on Task 4 improved by a second in the re-pilot
 
 **Complete chain**: Data → Observation → Interpretation → Fix → Verification ✅
 
