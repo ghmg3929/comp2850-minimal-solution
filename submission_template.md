@@ -1,4 +1,4 @@
-**Student**: Matthew Gregson (201818662) **Submission date**: \[DD/MM/YYYY\] **Academic Year**: 2025-26
+**Student**: Matthew Gregson (201818662) **Submission date**: 02/12/25 **Academic Year**: 2025-26
 
 ------------------------------------------------------------------------
 
@@ -167,7 +167,7 @@
 
 ### [Fix 1: Clear Filter Button](#fix-1-fix-name)
 
-**Addresses finding**: Finding 1
+**Addresses finding**: Finding 1  
 **Path and File**: index.peb Line 80
 
 **Before**:
@@ -188,7 +188,7 @@
 
 ### [Fix 2: Increase Outline Visibility](#fix-2-fix-name)
 
-**Addresses finding**: Finding 3
+**Addresses finding**: Finding 3  
 **Path and Line**: base.peb Line 54
 
 **Before**:
@@ -211,7 +211,7 @@
 
 ### [Part A: Regression Checklist (20 checks)](#part-a-regression-checklist-20-checks)
 
-**Instructions**: Test all 20 criteria. Mark pass/fail/n/a + add notes.
+**Instructions**: Test all 20 criteria. Mark pass/fail/n/a + add notes.  
 **Axe Report**: [Report Here](evidence/screenshots/regression-axe-report.png)
 
 ### Keyboard (5)
@@ -292,7 +292,6 @@
 
 ### [Screenshots](#screenshots)
 
-::: table-wrapper
 |Filename                   |What it shows                            |Context/Link to finding               |
 |---------------------------|-----------------------------------------|--------------------------------------|
 |regression-axe-report.png  |axe DevTools showing 0 violations        |Verification Part A                   |
@@ -300,7 +299,6 @@
 |filter-buttons-after.png   |the added remove filter button code      |Fix 1                                 |
 |focus-outline-before.png   |code showing the original css for buttons|Fix 2                                 |
 |focus-outline-after.png    |the added outline css code for buttons   |Fix 2                                 |
-:::
 
 **PII check**:
 
