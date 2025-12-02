@@ -171,32 +171,28 @@
 ### [Fix 1: Clear Filter Button](#fix-1-fix-name){.header}
 
 **Addresses finding**: Finding 1
+**Path and File**: index.peb Line 80
 
-**Before** (\[file path:line number\]):
+**Before**:
 
-``` kotlin
-// ❌ Problem code
-[Paste your original code here]
-```
+[Original code](evidence/screenshots/filter-buttons-before.png)
 
-**After** (\[file path:line number\]):
+**After**:
 
-``` kotlin
-// ✅ Fixed code
-[Paste your improved code here]
-```
+[Fixed code](evidence/screenshots/filter-buttons-after.png)
 
-**What changed**: \[1 sentence - what you added/removed/modified\]
+**What changed**: Added a remove filter button which clears any filter
 
-**Why**: \[1 sentence - which WCAG criterion or usability issue this fixes\]
+**Why**: This fixes Labels and Instructions, making it clearer how to remove any filter
 
-**Impact**: \[1-2 sentences - how this improves UX, who benefits\]
+**Impact**: This provides a specified button for removing the filter, which is much clearer than it was otherwise
 
 ------------------------------------------------------------------------
 
 ### [Fix 2: Increase Outline Visibility](#fix-2-fix-name){.header}
 
 **Addresses finding**: Finding 3
+**Path and Line**: base.peb Line 54
 
 **Before**:
 
@@ -219,61 +215,62 @@
 ### [Part A: Regression Checklist (20 checks)](#part-a-regression-checklist-20-checks){.header}
 
 **Instructions**: Test all 20 criteria. Mark pass/fail/n/a + add notes.
+**Axe Report**: [Report Here](evidence/screenshots/Regression-Axe-Report.png)
 
 ::: table-wrapper
 ### Keyboard (5)
 
 | Check | Criterion                             | Level  | Result            | Notes                                                       |
 |-------|---------------------------------------|--------|-------------------|-------------------------------------------------------------|
-| K1    | 2.1.1 All actions keyboard accessible | A      | [pass/fail]       | Tested Tab/Enter on all buttons                             |
-| K2    | 2.4.7 Focus visible                   | AA     | [pass/fail]       | 2px blue outline on all interactive elements                |
-| K3    | No keyboard traps                     | A      | [pass/fail]       | Can Tab through filter, edit, delete without traps          |
-| K4    | Logical tab order                     | A      | [pass/fail]       | Top to bottom, left to right                                |
-| K5    | Skip links present                    | AA     | [pass/fail/n/a]   | Skip to main content works                                  |
+| K1    | 2.1.1 All actions keyboard accessible | A      | pass              | Tested Tab/Enter on all buttons                             |
+| K2    | 2.4.7 Focus visible                   | AA     | pass              | 2px blue outline on all interactive elements                |
+| K3    | No keyboard traps                     | A      | pass              | Can Tab through filter, edit, delete without traps          |
+| K4    | Logical tab order                     | A      | pass              | Top to bottom, left to right                                |
+| K5    | Skip links present                    | AA     | fail              | It doesn't take you straight to the task list               |
 
 ### Forms (3)
 
 | Check | Criterion              | Level | Result        | Notes                                              |
 |------|-------------------------|-------|---------------|----------------------------------------------------|
-| F1   | 3.3.2 Labels present    | A     | [pass/fail]   | All inputs have label or aria-label                |
-| F2   | 3.3.1 Errors identified | A     | [pass/fail]   | Errors have role=alert (FIXED in Fix #1)           |
-| F3   | 4.1.2 Name/role/value   | A     | [pass/fail]   | All form controls have accessible names            |
+| F1   | 3.3.2 Labels present    | A     | pass          | All inputs have label or aria-label                |
+| F2   | 3.3.1 Errors identified | A     | pass          | This did not get corrected during my fixes         |
+| F3   | 4.1.2 Name/role/value   | A     | pass          | All form controls have accessible names            |
 
 ### Dynamic (3)
 
-| Check | Criterion               | Level | Result      | Notes                                              |
+| Check | Criterion                | Level | Result      | Notes                                              |
 |-------|--------------------------|-------|-------------|----------------------------------------------------|
-| D1    | 4.1.3 Status messages    | AA    | [pass/fail] | Status div has role=status                         |
-| D2    | Live regions work        | AA    | [pass/fail] | Tested with NVDA, announces “Task added”          |
-| D3    | Focus management         | A     | [pass/fail] | Focus moves to error summary after submit          |
+| D1    | 4.1.3 Status messages    | AA    | pass        | Status div has role=status                         |
+| D2    | Live regions work        | AA    | pass        | Tested with NVDA, announces “Task added”           |
+| D3    | Focus management         | A     | pass        | Focus moves to error summary after submit          |
 
 ### No-JS (3)
 
-| Check | Criterion              | Level | Result      | Notes                                              |
-|-------|-------------------------|-------|-------------|----------------------------------------------------|
-| N1    | Full feature parity     | —     | [pass/fail] | All CRUD ops work without JS                      |
-| N2    | POST-Redirect-GET       | —     | [pass/fail] | No double-submit on refresh                       |
-| N3    | Errors visible          | A     | [pass/fail] | Error summary shown in no-JS mode                 |
+| Check | Criterion               | Level | Result      | Notes                                             |
+|-------|-------------------------|-------|-------------|---------------------------------------------------|
+| N1    | Full feature parity     | —     | fail        | edit task does not work without js                |
+| N2    | POST-Redirect-GET       | —     | pass        | No double-submit on refresh                       |
+| N3    | Errors visible          | A     | pass        | Error summary shown in no-JS mode                 |
 
 ### Visual (3)
 
-| Check | Criterion              | Level | Result      | Notes                           |
+| Check | Criterion               | Level | Result      | Notes                           |
 |-------|-------------------------|-------|-------------|---------------------------------|
-| V1    | 1.4.3 Contrast minimum  | AA    | [pass/fail] | All text 7.1:1 (AAA) via CCA    |
-| V2    | 1.4.4 Resize text       | AA    | [pass/fail] | 200% zoom, no content loss      |
-| V3    | 1.4.11 Non-text contrast | AA   | [pass/fail] | Focus indicator 4.5:1           |
+| V1    | 1.4.3 Contrast minimum  | AA    | pass        | All text 7.1:1 (AAA) via CCA    |
+| V2    | 1.4.4 Resize text       | AA    | pass        | 200% zoom, no content loss      |
+| V3    | 1.4.11 Non-text contrast| AA    | pass        | Focus indicator 4.5:1           |
 
 ### Semantic (3)
 
-| Check | Criterion               | Level | Result      | Notes                                           |
-|-------|--------------------------|-------|-------------|-------------------------------------------------|
-| S1    | 1.3.1 Headings hierarchy | A     | [pass/fail] | h1 → h2 → h3, no skips                          |
-| S2    | 2.4.1 Bypass blocks      | A     | [pass/fail] | `role="main"` landmark for filter              |
-| S3    | 1.1.1 Alt text           | A     | [pass/fail] | No images OR all images have alt               |
+| Check | Criterion                | Level | Result      | Notes                                          |
+|-------|--------------------------|-------|-------------|------------------------------------------------|
+| S1    | 1.3.1 Headings hierarchy | A     | pass        | h1 → h2 → h3, no skips                         |
+| S2    | 2.4.1 Bypass blocks      | A     | pass        | `role="main"` landmark for filter              |
+| S3    | 1.1.1 Alt text           | A     | pass        | No images                                      |
 
 :::
 
-**Summary**: \[X/20 pass\], \[Y/20 fail\] **Critical failures** (if any): \[List any Level A fails\]
+**Summary**: 18/20 pass, 2/20 fail **Critical failures** (if any): Full Feature Parity
 
 ------------------------------------------------------------------------
 
@@ -282,20 +279,18 @@
 **Instructions**: Compare Week 9 baseline (pre-fix) to Week 10 (post-fix). Show improvement.
 
 ::: table-wrapper
-  Metric                    Before (Week 9, n=X)   After (Week 10, n=Y)   Change             Target Met?
-  ------------------------- ---------------------- ---------------------- ------------------ -------------
-  SR error detection        \[e.g., 0/2 (0%)\]     \[e.g., 2/2 (100%)\]   \[e.g., +100%\]    \[✅/❌\]
-  Validation error rate     \[e.g., 33%\]          \[e.g., 0%\]           \[e.g., -33%\]     \[✅/❌\]
-  Median time \[Task X\]    \[e.g., 1400ms\]       \[e.g., 1150ms\]       \[e.g., -250ms\]   \[✅/❌\]
-  WCAG \[criterion\] pass   \[fail\]               \[pass\]               \[--- \]           \[✅/❌\]
+  |Metric                   |Before (Week 9, n=X)  |After (Week 10, n=Y)  |Change            |Target Met?  |
+  |-------------------------|----------------------|----------------------|------------------|-------------|
+  |Unfilter                 | 4700ms, n=3          | 3700ms, n=2          |-1000ms           |Yes          |
+  |Focus Outline            | 21s, n=1             | 19.5s, n=1           |-1500ms           |Yes          |
 :::
 
 **Re-pilot details**:
 
--   **P4** (post-fix): \[Variant - e.g., "Screen reader user, NVDA + keyboard"\] - \[Date piloted\]
--   **P5** (if applicable): \[Variant\] - \[Date\]
+-   **P4** (post-fix): Computer with HTMX on - 2/12/2025
+-   **P5** (post-fix): Computer with HTMX on, Keyboard Only - 2/12/2025
 
-**Limitations / Honest reporting**: \[If metrics didn't improve or only modestly: explain why. Small sample size? Wrong fix? Needs more iteration? Be honest - valued over perfect results.\]
+**Limitations / Honest reporting**: There was a modest improvement in time due to the two fixes I implemented. These were only intended to be improvements to clarity, as I am not proficient enough to begin making more substantial changes like no-js task editing.
 
 ------------------------------------------------------------------------
 
