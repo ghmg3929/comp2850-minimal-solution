@@ -212,7 +212,7 @@
 ### [Part A: Regression Checklist (20 checks)](#part-a-regression-checklist-20-checks)
 
 **Instructions**: Test all 20 criteria. Mark pass/fail/n/a + add notes.
-**Axe Report**: [Report Here](evidence/screenshots/Regression-Axe-Report.png)
+**Axe Report**: [Report Here](evidence/screenshots/regression-axe-report.png)
 
 ### Keyboard (5)
 
